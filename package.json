@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --display-error-details && node server/server",
+    "dev": "webpack --display-error-details && concurrently  \"webpack --display-error-details --watch\" \"node server/server\"",
+    "dev-frontend": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.0.34",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "concurrently": "^3.1.0",
+    "json-loader": "^0.5.4",
+    "react-hot-loader": "^1.3.1",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.2.2",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2"
+  },
+  "dependencies": {
+    "@types/react": "^0.14.51",
+    "@types/react-dom": "^0.14.19",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
